@@ -1,0 +1,5 @@
+
+
+Index (equals table)
+Document (equals row)
+Properties (equals columns)

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{13A8CEB6-4746-47D9-B7E5-3558A6AAED5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Connect", "6 Connect", "{1E17F604-E554-4832-9DF2-6E3D38413ABE}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\Connect\1 App Service Logic App.txt = Notes\Connect\1 App Service Logic App.txt
+		Notes\Connect\2 Azure Search.txt = Notes\Connect\2 Azure Search.txt
+		Notes\Connect\3 API gateway.txt = Notes\Connect\3 API gateway.txt
+		Notes\Connect\4 Events.txt = Notes\Connect\4 Events.txt
+		Notes\Connect\5 Messages.txt = Notes\Connect\5 Messages.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 IaaS", "1 IaaS", "{D43300AE-CBEF-4BE1-9D54-5C6DEA81186C}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\IaaS\1 Virtual Machines.txt = Notes\IaaS\1 Virtual Machines.txt
+		Notes\IaaS\2 Batch Jobs.txt = Notes\IaaS\2 Batch Jobs.txt
+		Notes\IaaS\3 Containerized Solutions.txt = Notes\IaaS\3 Containerized Solutions.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Optimize", "5 Optimize", "{8A7204F5-6F78-41A8-92ED-D9C83003C108}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\Optimize\1 Scalable apps.txt = Notes\Optimize\1 Scalable apps.txt
+		Notes\Optimize\2 Caching.txt = Notes\Optimize\2 Caching.txt
+		Notes\Optimize\3 Monitoring and Logging.txt = Notes\Optimize\3 Monitoring and Logging.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 PaaS", "2 PaaS", "{530F4C41-4D82-41D7-96A1-060466C4BD31}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\PaaS\1 Web Apps.txt = Notes\PaaS\1 Web Apps.txt
+		Notes\PaaS\2 Mobile Apps.txt = Notes\PaaS\2 Mobile Apps.txt
+		Notes\PaaS\3 Service API Apps.txt = Notes\PaaS\3 Service API Apps.txt
+		Notes\PaaS\4 Functions.txt = Notes\PaaS\4 Functions.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Security", "4 Security", "{CA3F13D6-5528-45CF-B08C-27693C9B374C}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\Security\1 Authentication.txt = Notes\Security\1 Authentication.txt
+		Notes\Security\2 Access Control.txt = Notes\Security\2 Access Control.txt
+		Notes\Security\3 Secure data.txt = Notes\Security\3 Secure data.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Storage", "3 Storage", "{D9C9B9BA-1D9A-44F4-B9DF-E2311C7AF10F}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\Storage\1 Storage tables.txt = Notes\Storage\1 Storage tables.txt
+		Notes\Storage\2 Cosmos DB.txt = Notes\Storage\2 Cosmos DB.txt
+		Notes\Storage\3 SQL.txt = Notes\Storage\3 SQL.txt
+		Notes\Storage\4 Blob storage.txt = Notes\Storage\4 Blob storage.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E17F604-E554-4832-9DF2-6E3D38413ABE} = {13A8CEB6-4746-47D9-B7E5-3558A6AAED5E}
+		{D43300AE-CBEF-4BE1-9D54-5C6DEA81186C} = {13A8CEB6-4746-47D9-B7E5-3558A6AAED5E}
+		{8A7204F5-6F78-41A8-92ED-D9C83003C108} = {13A8CEB6-4746-47D9-B7E5-3558A6AAED5E}
+		{530F4C41-4D82-41D7-96A1-060466C4BD31} = {13A8CEB6-4746-47D9-B7E5-3558A6AAED5E}
+		{CA3F13D6-5528-45CF-B08C-27693C9B374C} = {13A8CEB6-4746-47D9-B7E5-3558A6AAED5E}
+		{D9C9B9BA-1D9A-44F4-B9DF-E2311C7AF10F} = {13A8CEB6-4746-47D9-B7E5-3558A6AAED5E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD077673-710F-4DE1-81AD-ADB4B2A22559}
+	EndGlobalSection
+EndGlobal
