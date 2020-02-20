@@ -1,0 +1,116 @@
+{
+  "name": "email",
+  "fields": [
+    {
+      "name": "id",
+      "type": "Edm.String",
+      "facetable": false,
+      "filterable": false,
+      "key": true,
+      "retrievable": true,
+      "searchable": false,
+      "sortable": false,
+      "analyzer": null,
+      "indexAnalyzer": null,
+      "searchAnalyzer": null,
+      "synonymMaps": [],
+      "fields": []
+    },
+    {
+      "name": "subject",
+      "type": "Edm.String",
+      "facetable": false,
+      "filterable": false,
+      "key": false,
+      "retrievable": false,
+      "searchable": true,
+      "sortable": false,
+      "analyzer": "da.lucene",
+      "indexAnalyzer": null,
+      "searchAnalyzer": null,
+      "synonymMaps": [],
+      "fields": []
+    },
+    {
+      "name": "sender",
+      "type": "Edm.String",
+      "facetable": true,
+      "filterable": true,
+      "key": false,
+      "retrievable": false,
+      "searchable": true,
+      "sortable": false,
+      "analyzer": "standard.lucene",
+      "indexAnalyzer": null,
+      "searchAnalyzer": null,
+      "synonymMaps": [],
+      "fields": []
+    },
+    {
+      "name": "receiver",
+      "type": "Edm.String",
+      "facetable": true,
+      "filterable": true,
+      "key": false,
+      "retrievable": false,
+      "searchable": true,
+      "sortable": false,
+      "analyzer": "standard.lucene",
+      "indexAnalyzer": null,
+      "searchAnalyzer": null,
+      "synonymMaps": [],
+      "fields": []
+    },
+    {
+      "name": "message",
+      "type": "Edm.String",
+      "facetable": false,
+      "filterable": false,
+      "key": false,
+      "retrievable": false,
+      "searchable": true,
+      "sortable": false,
+      "analyzer": "da.microsoft",
+      "indexAnalyzer": null,
+      "searchAnalyzer": null,
+      "synonymMaps": [],
+      "fields": []
+    }
+  ],
+  "suggesters": [
+    {
+      "name": "subject",
+      "searchMode": "analyzingInfixMatching",
+      "sourceFields": [
+        "subject"
+      ]
+    }
+  ],
+  "scoringProfiles": [
+    {
+      "name": "email-scoring",
+      "functions": [],
+      "functionAggregation": null,
+      "text": {
+        "weights": {
+          "receiver": 100,
+          "sender": 95,
+          "subject": 80,
+          "message": 60
+        }
+      }
+    }
+  ],
+  "defaultScoringProfile": "email-scoring",
+  "corsOptions": {
+    "allowedOrigins": [
+      "www.website.com"
+    ],
+    "maxAgeInSeconds": null
+  },
+  "analyzers": [],
+  "charFilters": [],
+  "tokenFilters": [],
+  "tokenizers": [],
+  "@odata.etag": "\"0x8D7B56C003C02F4\""
+}

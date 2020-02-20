@@ -1,5 +1,6 @@
 https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on
 
+Singlefactor vs multifactor
 
 OAuth2
 OpenID

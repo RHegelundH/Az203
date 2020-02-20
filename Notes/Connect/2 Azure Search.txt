@@ -1,5 +1,27 @@
+Documentations:
+https://docs.microsoft.com/da-dk/azure/search/
+https://azure.microsoft.com/da-dk/services/search/
 
-
+Terms or components:
 Index (equals table)
 Document (equals row)
-Properties (equals columns)
+Fields (equals columns)
+- Name
+- Type
+- Attributes
+	IsFilterable - using Equals (case sensitive)
+	IsSearchable - using full-text enging
+	IsSortable (sorting result by this)
+	IsFacetable (sub-navigating)
+
+Settings:
+Replicas
+Partitions
+Search Units
+
+
+Indexer:
+Pulls from e.g. Cosmos DB
+
+ARM template
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax
