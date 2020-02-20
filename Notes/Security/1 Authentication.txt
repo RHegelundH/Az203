@@ -1,0 +1,6 @@
+https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on
+
+
+OAuth2
+OpenID
+Microsoft Identity platform

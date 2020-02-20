@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using Microsoft.ApplicationInsights.Channel;
+using Microsoft.ApplicationInsights.DataContracts;
+using Microsoft.ApplicationInsights.Extensibility;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace MyApp.Common
+{
+    public class AzureCheckTableExistsInitializer : ITelemetryInitializer
+    {
+        public void Initialize(ITelemetry telemtry)
+        {
+            if(telemtry is DependencyTelemetry  dependencyTelemetry && 
+                dependencyTelemetry.Type.Equals("Azure table", StringComparison.OrdinalIgnoreCase) &&
+                dependencyTelemetry.Name.EndsWith("Tables", StringComparison.OrdinalIgnoreCase) &&
+                dependencyTelemetry.ResultCode.Equals("409", StringComparison.OrdinalIgnoreCase) &&
+                dependencyTelemetry.Success == false)
+            {
+                dependencyTelemetry.Success = true;
+            }
+        }
+    }
+}
+
+ApplicationInsights.config
+<Add Type="MyApp.Common.AzureCheckTableExistsInitializer, MyApp" />
